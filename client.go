@@ -129,7 +129,7 @@ func responseFilter(response *http.Response) (resp []byte, err error) {
 		return
 	}
 
-	if response.Header.Get("Content-Type") == "application/json" { // 只针对 json
+	if strings.Contains(response.Header.Get("Content-Type"), "json") { // 只针对 json
 		errorResponse := struct {
 			Errcode int64  `json:"errcode"`
 			Errmsg  string `json:"errmsg"`
