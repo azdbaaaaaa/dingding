@@ -1,4 +1,4 @@
-module github.com/fastwego/dingding
+module github.com/azdbaaaaaa/dingding
 
 go 1.15
 
